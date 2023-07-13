@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: montserrat;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--white-20);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.section-padding {
+    padding: 50px;
+}
+
+:root {
+    --blue: #0000FF;
+    --dark-blue: #0e0ea8;
+    --white: #fff;
+    --white-20: #c3e2f7;
+    --black: #000;
+    --black-90: #333;
+    --grey: #555;
+    --cobalt-blue: #1c58ac;
+    --bright-blue: #0096FF;
+    --light-blue: #d8efff;
+}
+
+h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    color: var(--dark-blue);
+}
+
+h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 80px;
+    color: var(--grey);
+}
+
+h4 {
+    font-size: 30px;
+    color: var(--cobalt-blue);
+}
+
+p{
+    font-size: 20px;
+}
+
+button {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background: transparent;
+    text-transform: capitalize;
+    color: var(--cobalt-blue);
+    border: 1px solid var(--cobalt-blue);
+    cursor: pointer;
+}
+
+button:hover{
+    color: var(--white);
+    background-color: var(--cobalt-blue);
+    letter-spacing: 1px;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Navbar Section  */
+
+.navbar {
+    height: 100px;
+    background: #fff;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-toggler{
+    border: none;
+    color: var(--cobalt-blue);
+}
+
+.navbar-toggler:hover{
+    border: none;
+    background-color: var(--bright-blue);
+    color: var(--white);
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    margin-right: 20px;
+    color: var(--black) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--cobalt-blue) !important;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand img {
+    height: 150px;
+    width: 150px;
+}
+
+
+.button:hover {
+    background-color: var(--cobalt-blue);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+}
+
+.button {
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 500px;
+    text-transform: uppercase;
+    color: var(--cobalt-blue);
+    border: 1px solid var(--cobalt-blue);
+}
+
+/* Main Section  */
+
+.main h1{
+    margin-top: 100px;
+}
+
+.main p{
+    color: var(--grey);
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+
+/* Carousel SEction*/
+
+.carousel-item {
+    max-height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-item img {
+    max-height: 600px;
+    width: 100%;
+}
+
+.carousel li{
+    background: var(--white);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel li.active{
+    background: var(--bright-blue);
+}
+
+/* Counter Section */
+
+.counter h2{
+    color: var(--cobalt-blue);
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.counter p{
+    color: var(--grey);
+}
+
+.counter span {
+    font-size: 50px;
+    font-weight: 300;
+    color: var(--cobalt-blue);
+}
+
+.counter .heading {
+    font-size: 30px;
+    color: var(--black-90);
+}
+
+/* Work Section  */
+
+.work h3{
+    margin-top: 0;
+}
+
+.work h1{
+    margin-top: 10px;
+}
+
+.work .card {
+    margin-top: 100px;
+    border-radius: 20px;
+    background: var(--white);
+}
+
+.work .card:hover{
+    box-shadow: 5px 5px 10px rgba(98, 98, 102, 0.7);
+    border: none;
+    transform: scale(0.9);
+}
+
+.work .card i {
+    font-size: 40px;
+    color: var(--cobalt-blue);
+}
+
+.work .card h4 {
+    font-size: 35px;
+    margin-top: 40px;
+    color: var(--cobalt-blue);
+}
+
+.work .card p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: var(--grey);
+}
+
+
+/* About Section  */
+
+.about p{
+    color: var(--grey);
+}
+
+.about .about-img img {
+    border-radius: 20px;
+}
+
+.about .about-img img:hover{
+    transform: scale(1.3);
+    box-shadow: 5px 5px 10px rgba(98, 98, 102, 0.7);
+}
+
+.about .about-text {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.about .about-text ul li {
+    list-style: none;
+    font-size: 20px;
+    color: var(--grey);
+}
+
+/* Service Section  */
+
+.services h3 {
+    margin-top: 10px;
+}
+
+.services p{
+    color: var(--grey);
+}
+
+.services h1 {
+    margin-top: 10px;
+}
+
+.services .card {
+    margin-top: 50px;
+    border: none;
+}
+
+.services .card:hover{
+    transform: scale(0.9);
+    box-shadow: 5px 5px 10px rgba(98, 98, 102, 0.7);
+    border: none;
+}
+
+.services .card i {
+    font-size: 50px;
+    color: var(--cobalt-blue);
+}
+
+.services .card p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Project Section  */
+
+.project p{
+    color: var(--grey);
+}
+
+.project p{
+  margin-top: 10px;
+}
+
+.project .card {
+    margin-top: 50px;
+    border: none;
+}
+
+.project .card:hover{
+    transform: scale(0.9);
+    box-shadow: 5px 5px 10px rgba(98, 98, 102, 0.7);
+    border: none;
+}
+
+.project .card h5 {
+    font-size: 25px;
+    color: var(--grey);
+}
+
+/* Choose Section  */
+
+.choose h1{
+    margin-top: 0;
+}
+
+.choose p{
+    margin-top: 50px;
+    color: var(--grey);
+}
+
+.choose img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.choose .card {
+    margin-top: 50px;
+    border: none;
+}
+
+.choose .card i{
+    color: var(--cobalt-blue);
+    font-size: 40px;
+}
+
+.choose .card:hover{
+    box-shadow: 5px 5px 10px rgba(98, 98, 102, 0.7);
+    border: none;
+}
+
+.choose .card h5 {
+    font-size: 25px;
+    margin-top: 40px;
+    color: var(--grey);
+}
+
+/* FAQ Section */
+
+.faq h1 {
+    margin-top: 0px;
+}
+
+.accordion {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 900px;
+    color: var(--white);
+}
+
+.accordion p{
+    margin-top: 0;
+    color: var(--white);
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label:hover {
+    color: var(--cobalt-blue);
+    background-color: var(--white);
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    background: var(--cobalt-blue);
+    margin-bottom: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+label::after {
+    content: "+";
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+.accordion .content {
+    background: var(--cobalt-blue);
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type='radio']:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type='radio']:checked+label::after {
+    transform: rotate(135deg);
+}
+
+/* Team Section  */
+
+.team .card {
+    margin-top: 50px;
+    border: none;
+}
+
+.team .card:hover{
+    box-shadow: 5px 5px 10px rgba(98, 98, 102, 0.7);
+    transform: scale(1.1);
+    border: none;
+}
+
+.team .card h4 {
+    font-size: 25px;
+    margin-top: 40px;
+    color: var(--cobalt-blue);
+}
+
+.team .card p{
+    font-size: 18px;
+    color: var(--grey);
+    margin-top: 10px;
+}
+
+.team .card i{
+    color: var(--bright-blue);
+    cursor: pointer;
+}
+
+.team .card i:hover{
+    color: var(--cobalt-blue);
+}
+
+/* Subscription Section  */
+
+.subscription{
+    background: var(--cobalt-blue);
+    padding: 100px;
+}
+
+.subscription h1, p{
+    color: var(--white);
+    margin-top: 10px;
+}
+
+.subscription input{
+    margin-top: 50px;
+    width: 30%;
+    height: 50px;
+    padding: 20px;
+    color: var(--dark-blue);
+}
+
+.subscription button{
+    color: var(--white);
+    background: transparent;
+    border: 1px solid var(--white);
+    height: 50px;
+    width: 100px;
+    margin-left: 10px;
+}
+
+.subscription button:hover{
+    background: var(--white);
+    color: var(--cobalt-blue);
+}
+
+/* Contact Section  */
+
+.contact p{
+    color: var(--grey);
+}
+
+.contact input{
+    height: 50px;
+    padding: 20px;
+    color: var(--dark-blue);
+    background: var(--white-20);
+    border: 1px solid var(--cobalt-blue);
+}
+
+.contact textarea{
+    border: none;
+    background: var(--white-20);
+    border: 1px solid var(--cobalt-blue);
+    color: var(--dark-blue);
+}
+
+.contact button{
+    margin-left: 220px;
+    margin-top: 20px;
+}
+
+.contact img{
+    height: 200px;
+    width: 200px;
+    margin-left: 100px;
+    border-radius: 50%;
+}
+
+.contact p{
+    margin-top: 20px;
+}
+
+/* Footer Section  */
+
+.footer{
+    background: var(--cobalt-blue);
+    color: var(--white);
+}
+
+.footer img{
+    height: 200px;
+    width: 200px;
+}
+
+.footer h4{
+    color: var(--white);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.footer li{
+    list-style: none;
+}
+.footer li a{
+    text-decoration: none;
+    color: var(--white-20);
+}
+
+.footer .socials a{
+    color: var(--white-20);
+}
+
+.footer .socials a:hover{
+    color: var(--bright-blue);
+}
+
+/* Responsive CSS  */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .button {
+        margin-left: 0;
+    }
+    .navbar {
+        height: 150px;
+    }
+    .navbar-nav {
+        text-align: center;
+        background-color: #fff;
+    }
+    .img-area img {
+        width: 100%;
+    }
+    .main h1{
+        margin-top: 150px;
+    }
+    .main p{
+        margin-top: 10px;
+    }
+    .counter{
+        text-align: center;
+    }
+    .subscription input{
+        width:70%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        background-color: #e2eafd;
+        height: 35vh;
+    }
+    .navbar {
+        height: 150px;
+    }
+    .footer{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .button {
+        margin-left: 0;
+    }
+    .navbar {
+        height: 150px;
+    }
+    .navbar-nav {
+        text-align: center;
+        background-color: #fff;
+        width: 100%;
+        height: 30vh;
+    }
+    .main h1{
+        margin-top: 150px;
+    }
+    
+    .main p{
+        margin-top: 10px;
+    }
+    .counter{
+        text-align: center;
+    }
+    .work .card {
+        margin-top: 10px;
+    }
+    .carousel li{
+        background: var(--bright-blue);
+    }
+    .carousel li.active{
+        background: var(--cobalt-blue);
+    }
+    .about-text {
+        padding-top: 50px;
+    }
+    .subscription input{
+        width:50%;
+    }
+    .footer{
+        text-align: center;
+    }
+}
