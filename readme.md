@@ -13,8 +13,8 @@ Construction Landing Page is clean, responsive (mobile-friendly), speed optimize
 
 ## Home Page
 
-<div align="center"><a name="menu"></a>
-![ScreenShot](landing-page.png)
+<div align="center">
+<img title="landing-page" src="landing-page.png" alt="Power-Builders" />
 </div>
 
 
