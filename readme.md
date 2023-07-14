@@ -29,7 +29,7 @@ Power Builders services ranging from
 
 ***Take a look - Live Demo:*** 
 
-- [Live Demo Link](https://github.com/keerti1924/Construction-Website-Landing-Page.git)
+- [Live Demo Link](https://keerti1924.github.io/Construction-Website-Landing-Page/)
 
 
 # Technology Used
