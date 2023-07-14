@@ -11,6 +11,13 @@ Power Builders is a building and construction company dedicated to excellence, w
 
 Construction Landing Page is clean, responsive (mobile-friendly), speed optimized. It includes an attractive banner with a contact form, Services section, Project section, work section, Banner with Call to Action Button and social media.
 
+## Home Page
+
+<div align="center"><a name="menu"></a>
+![ScreenShot](landing-page.png)
+</div>
+
+
 Power Builders services ranging from 
 
 - New building Construction
